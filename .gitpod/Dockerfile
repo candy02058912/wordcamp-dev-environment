@@ -13,9 +13,6 @@ RUN bash -c 'VERSION="lts/gallium" \
     && nvm use $VERSION && nvm alias default $VERSION'
 RUN echo "nvm use default &>/dev/null" >> ~/.bashrc.d/51-nvm-fix
 
-# Install Yarn
-RUN sudo npm install -g yarn
-
 # Install mkcert and nss
 RUN sudo apt-get update && sudo apt-get install -y libnss3-tools
 RUN curl -JLO "https://dl.filippo.io/mkcert/latest?for=linux/amd64" && \
