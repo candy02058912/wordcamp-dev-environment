@@ -4,3 +4,7 @@ image:
 tasks:
   - init: |
       bash .gitpod/setup.sh
+
+ports:
+  - port: 443
+    protocol: https
