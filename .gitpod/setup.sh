@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Clone WordCamp.org
-git clone https://github.com/WordPress/wordcamp.org.git
+git clone https://github.com/WordPress/wordcamp.org.git wordcamp.test
 cd wordcamp.test
 
 # Generate and trust SSL certificates
