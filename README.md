@@ -34,7 +34,7 @@ to `"type": "git"`
 
 5. In the terminal, make sure you're in the `wordcamp.test` directory.
 
-6. `docker build --pull`
+6. `docker compose build --pull`
 
 7. `docker compose up`
 
