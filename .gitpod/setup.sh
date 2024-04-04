@@ -24,3 +24,6 @@ nvm install
 nvm use
 yarn
 yarn workspaces run build
+
+# Build and boot the Docker environment
+docker compose build --pull
