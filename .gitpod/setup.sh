@@ -10,7 +10,8 @@ mkcert -install
 mkcert -cert-file wordcamp.test.pem -key-file wordcamp.test.key.pem wordcamp.test "*.wordcamp.test" events.wordpress.test
 
 # Edit composer.json so it pulls through https instead of ssh which will cause a failure
-sed -i 's/"type": "vcs"/"type": "git"/' config/composer.json
+sed -i '/"url": "https:\/\/github.com\/WordPress\/wporg-mu-plugins.git"/{s/$/,/;a\      "no-api": true
+}' config/composer.json
 
 # Clone WordPress and checkout the latest version
 cd ../public_html
