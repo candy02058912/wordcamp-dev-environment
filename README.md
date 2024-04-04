@@ -40,9 +40,7 @@ TBD
 
 4. [Gitpod] Make sure you're in the `wordcamp.test` directory
 
-5. [Gitpod] `docker compose build --pull`
-
-6. [Gitpod] `docker compose up`
+5. [Gitpod] `docker compose up`
 
 7. Visit https://wordcamp.test
 
